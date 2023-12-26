@@ -1,9 +1,8 @@
 import { format } from 'node:util';
-import { jsonSafeStringify } from 'typesdk/safe-json';
-import { removeAsciCharacters } from 'typesdk/logger';
-import { format as asciformat } from 'typesdk/utils/asci';
 
 import type { Debug, Dict } from './types';
+import { jsonSafeStringify } from './safe-jsonv1';
+import { asciformat, removeAsciCharacters } from './utils';
 
 
 export function createNodeDebug(ns: string): Debug {

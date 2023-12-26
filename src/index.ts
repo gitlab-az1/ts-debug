@@ -15,6 +15,12 @@ declare global {
 }
 
 
+/**
+ * Creates a new debug instance
+ * 
+ * @param {string} namespace The namespace to use for the debug instance 
+ * @returns {Debug} The debug instance
+ */
 export function createDebug(namespace: string): Debug {
   if(typeof process === 'undefined' || process.type === 'renderer' || process.browser === true || process.__nwjs) {
     throw new Error('Browser support for this module is not implemented yet');
