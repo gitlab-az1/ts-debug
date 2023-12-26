@@ -2,7 +2,6 @@
   "name": "@ts/debug",
   "version": "1.0.0",
   "main": "index.js",
-  "private": true,
   "repository": "https://github.com/gitlab-az1/ts-debug.git",
   "author": "gitlab-az1 <gitlab.az1@gmail.com>",
   "license": "MPL-2.0",
